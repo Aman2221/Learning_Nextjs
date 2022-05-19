@@ -15,7 +15,6 @@ export const getStaticProps = async () => {
 }
 
 const home = ({ data }) => {
-  console.log(data);
   return (
     <>
       <Head>
