@@ -1,0 +1,14 @@
+@mixin flexBox($flexDirection,$justifyContent,$alignItems){
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $flexDirection;
+}
+
+@mixin gridBox($repeat, $width, $rowGap,$columnGap) {
+    display: grid;
+    grid-template-columns: repeat($repeat, $width);
+    grid-template-rows: repeat($repeat, $width);
+    row-gap: $rowGap;
+    column-gap: $columnGap;
+}

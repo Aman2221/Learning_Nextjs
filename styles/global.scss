@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import "./Modules/Mixins/_Box.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: '#3BACB6';
+    width: 100%;
+    height: 100vh;
+}
+//variables
+$main-color: '#00FFAB';
+
+@mixin flexBox($flexDirection, $justifyContent, $alignItems) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $flexDirection;
+}
+
+.homeContainer,.aboutContainer{
+    @include flexBox(column, center, center);
+    color: $main-color;
+    h1{
+        color: $main-color;
+    }
+}
